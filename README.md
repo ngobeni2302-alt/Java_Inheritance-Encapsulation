@@ -4,7 +4,10 @@
 📖 The Scenario
 You have joined an engineering team building a brand-new internal Order Fulfillment System for an e-commerce platform.
 
-A junior developer pushed initial code changes, but the architecture is completely vulnerable. Currently, any external system can bypass tracking logic and change critical fields like isShipped manually. Even worse, our application allows orders to be marked as "Shipped" multiple times without state tracking validation, which will cause real-world double-shipping financial losses!
+A junior developer pushed initial code changes, but the architecture is completely vulnerable. 
+Currently, any external system can bypass tracking logic and change critical fields like isShipped manually. 
+Even worse, our application allows orders to be marked as "Shipped" multiple times without state tracking validation, 
+which will cause real-world double-shipping financial losses!
 
 Your task is to refactor and implement the core engineering rules inside the fulfillment package to secure our application architecture.
 
@@ -57,4 +60,5 @@ Implement a public toString() method that returns a descriptive layout string.
 
 Place the @Override metadata annotation directly above the method declaration.
 
-Encapsulation Constraint: Because the parent class properties are sealed under private access modifiers, you must access them polymorphically by executing the inherited public getter methods: getOrderId() and getCustomerEmail().
+Encapsulation Constraint: Because the parent class properties are sealed under private access modifiers, 
+you must access them polymorphically by executing the inherited public getter methods: getOrderId() and getCustomerEmail().
